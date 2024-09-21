@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markos Volikas</title>
-    <link rel="icon" href="code.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
@@ -14,12 +13,25 @@
         }
         .float-image {
             float: right;
-            width: 200px;
+            width: 180px;
             height: auto;
             margin-left: 17px;
+            margin-top: 17px;
         }
         a {
             text-decoration: none;
+        }
+        .link-apache {
+            color: #CB2138;
+        }
+        .link-apache:hover {
+            color: #662F8F;
+        }
+        .link {
+            color: #343a40;
+        }
+        .link:hover {
+            color: #212529;
         }
     </style>
 </head>
@@ -28,27 +40,24 @@
         <br><br><br>
         <div class="clearfix">
             <img src="https://avatars.githubusercontent.com/u/115570991?v=4" class="float-image rounded" alt="Image">
-            <h3>Markos Volikas</h3>
-            <p>
-              Computer science aficionado <i class="bi bi-heart-fill text-danger"></i> <br>
-              Working on search engines at <a href="https://www.contexity.ch/en/" class="link-primary">Contexity</a> <br>
-              Learned cool stuff while studying at the <a href="https://www.di.uoa.gr/en" class="link-primary">University of Athens</a> <br>
-              Occasional <a href="https://stormcrawler.apache.org/" class="link-primary">Apache StormCrawler</a> contributor
-            </p>
-
-            <h5 class="ms-3"><a class="link-dark" href="https://github.com/mvolikas"><i class="bi bi-github"></i></a> &nbsp;<a class="link-dark" href="mailto:mvolikas@gmail.com"><i class="bi bi-envelope-at"></i></a>&nbsp; <a class="link-dark" href="https://www.linkedin.com/in/mvolikas"><i class="bi bi-linkedin"></i></a></h5>
-
-            <br>
-            <h5>CS & math readings, almost as good as fiction</h5>
-            <ul>
-                <li><a class="link-danger" href="https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf">Xv6</a>: a simple, Unix-like operating system</li>
-                <li>Elements of the theory of computation by Lewis & Papadimitriou</li>
-                <li>Elementary number theory by Burton</li>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Markos Volikas</h3>
+                    Computer science aficionado <i class="bi bi-heart-fill text-danger"></i> <br>
+                    Working on search engines at <a href="https://www.contexity.ch/en/" class="link-primary">Contexity</a> <br>
+                    Occasional <a href="https://stormcrawler.apache.org/" class="link-primary">StormCrawler</a> contributor <a class="link-apache font-monospace" href="https://people.apache.org/committer-index.html#mvolikas"><i class="bi bi-feather"></i></a> Apache Committer <br>
+                    Learned cool stuff while studying at the <a href="https://www.di.uoa.gr/en" class="link-primary">University of Athens</a>
+                </div>
+                <div class="card-footer"><a class="link" href="https://github.com/mvolikas"><i class="bi bi-github"></i></a>&nbsp; <a class="link" href="mailto:mvolikas@gmail.com"><i class="bi bi-envelope-at"></i></a>&nbsp; <a class="link" href="https://www.linkedin.com/in/mvolikas"><i class="bi bi-linkedin"></i></a>&nbsp; <a class="link" href="https://gitlab.com/mvolikas"><i class="bi bi-gitlab"></i></a></div>
+            </div>
+            <p></p>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="bi bi-bookmark-heart"></i>&nbsp; If you want to learn OS the fun way, try kernel hacking with <a class="link-danger" href="https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf">Xv6</a>!</li>
+                <li class="list-group-item"><i class="bi bi-bookmark-heart"></i>&nbsp; If you are into algorithmic problem-solving, check out the <a href="https://usaco.guide/" class="link-primary">USACO Guide</a>!</li>
             </ul>
-            <br>
-            <p>If you are into Competitive Programming, an excellent starting point is the <a href="https://usaco.guide/general/resources-cp#within-this-guide" class="link-primary">USACO Guide</a>!
         </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
